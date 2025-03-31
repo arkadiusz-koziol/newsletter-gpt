@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h1>Welcome, {{ current_user.email }}</h1>
+    <p>Your selected topics: {{ topics }}</p>
+    <a href="{{ url_for('main.logout') }}">Logout</a>
+</body>
+</html>
